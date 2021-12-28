@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Robert Firanji">
+    <style>
+        body {
+            background-color: rgb(94, 91, 91);
+        }
+
+        .container {
+            display: block;
+            position: relative;
+            margin: 150px 600px;
+            width: 500px;
+            background-color: darkslateblue;
+            border: 3px solid rgb(252, 252, 252);
+            border-radius: 39px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+    <title>Zadatak Zapremina Valjka</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="resenje">Povrsina valjka je :</h1>
+    </div>
+
+    <script>
+        var r = prompt("Unesite poluprecnik valjka:");
+        var H = prompt("Unesite visinu valjka:");
+        var π = 3.14;
+
+        var iznos = parseInt(r) * parseInt(r) * parseInt(H) * (π);
+        alert("Povrsina valjka je:" + iznos);
+        var x = document.getElementById("resenje");
+        x.innerHTML = "Povrsina valjka je:" + iznos;
+    </script>
+</body>
+
+</html>
